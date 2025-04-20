@@ -25,15 +25,15 @@
     
         <input type="text" name="buscar" placeholder="Buscar Joya..." value="{{ request('buscar') }}" class="filtro-input">
     
-        <button type="submit" class="nav-link btn-filtrar">Filtrar</button>
+        <button type="submit" class="nav-link btn-filtrar"> 🗂️ Filtrar</button>
     </form>
 
     <ul class="nav-menu">
         <li class="nav-item">
-            <a href="{{ route('producto.create') }}" class="nav-link btn-agregar">Agregar Joyas</a>
+            <a href="{{ route('producto.create') }}" class="nav-link btn-agregar"> ➕ Agregar Joyas</a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('pdf.productos', request()->query()) }}" target="_blank" class="nav-link btn-generar-pdf">Descargar pdf</a>
+            <a href="{{ route('pdf.productos', request()->query()) }}" target="_blank" class="nav-link btn-generar-pdf"> ⬇️ Descargar pdf</a>
         </li>
     </ul>
   </nav>

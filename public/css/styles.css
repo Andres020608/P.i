@@ -2,7 +2,7 @@
     --color-slidebar:white;      
     --color-main:rgb(244, 247, 250);
     --color-texto:rgba(25, 22, 22, 0.836);
-    --color-texto-hover:  rgba(129, 67, 191, 0.8);
+    --color-texto-hover:  rgba(0, 0, 0, 0.8);
 
     
 
@@ -108,13 +108,13 @@ body{
     display: none;
 }
 .element-slidebar-content a:hover, .element-slidebar-content form:hover,.element-slidebar-btn:hover {
-    color: blueviolet;
+    color: rgb(0, 0, 0);
     background-color: rgba(45, 20, 44, 0.055);
     border-radius: 0 20px 20px 0;
 }
 
 .element-slidebar-btn.active{
-   background-color:var(--color-texto-hover);
+   background-color:gray;
    color: var(--color-main);
    border-radius: 0 20px 20px 0;
    
@@ -331,16 +331,16 @@ body{
     }
 
     .btn-generar-pdf:hover {
-        background-color: #218838;
+        background-color: #00330b;
     }
 
     /* Botón de Agregar Producto en azul claro */
     .btn-agregar{
-        background-color: #17a2b8;
+        background-color: #0014c5;
     }
 
     .btn-agregar:hover {
-        background-color: #138496;
+        background-color: #000000;
     }
      /* Estilo del contenedor del formulario */
 .form-filtros {
@@ -382,12 +382,12 @@ body{
 .btn-filtrar {
     padding: 7px 20px;
     border-radius: 5px;
-    background-color: #ffc107; /* Amarillo */
+    background-color: #ff8800; /* Amarillo */
     color: #fff;
 }
 
 .btn-filtrar:hover {
-    background-color: #e0a800;
+    background-color: #773a00;
 }
  /* Estilos para la paginación */
 .pagination {
@@ -418,7 +418,7 @@ body{
 .pagination li.active span {
     background-color:var(--color-texto-hover); /* Color de fondo más oscuro para el activo */
     color: #fff; /* Color del texto en blanco */
-    border: 1px solid blueviolet; /* Mantener el borde del mismo color que el fondo */
+    border: 1px solid rgb(0, 0, 0); /* Mantener el borde del mismo color que el fondo */
 }
 
 /* Estilo para los enlaces deshabilitados */
