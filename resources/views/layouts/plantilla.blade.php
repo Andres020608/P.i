@@ -21,16 +21,18 @@
 <body>
   <!-- slidebar   -->
    <aside class="slidebar" id="slidebar">
-   
-    <a href="" class="logo">
-        <img src="{{asset('img/cangrejo.png')}}" alt="Logo" class="logo-img">
-        <p class="logo-text">Tienda</p>
-      </a>
-    
+
+   <a href="{{ route('dashboard') }}">
+    <button style="all: unset; cursor: pointer;">
+        <img src="{{ asset('img/logo2.jpeg') }}" alt="Tienda" style="margin:20px; height: 200px;">
+        <h2 class=Titulologo style= "font-size: 18px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >Tienda</h2>
+    </button>
+</a>    
+
     <!-- PERFIL -->
     <div class="element-slidebar">
         <div class="element-slidebar-btn profile">
-         <span><img src="{{asset('img/face3.png')}}" alt="avatar"></span>
+         <span><img src="{{asset('img/logo2.jpeg')}}" alt="avatar"></span>
          <p>{{ Auth::user()->name }}</p>
         </div>
         <div class="element-slidebar-content">
@@ -47,7 +49,7 @@
      <!-- Categorias -->
          
         <div class="element-slidebar-btn">
-         <span><img  src="{{asset('img/category.png')}}" alt="Product"></span>
+         <span><img  src="{{asset('img/categoria.png')}}" alt="Product"></span>
          <a href="{{route('categoria.index')}}">Categorias</a>
         </div>
        
@@ -56,13 +58,13 @@
     
     
         <div class="element-slidebar-btn">
-         <span><img  src="{{asset('img/rokrt.png')}}" alt="Product"></span>
+         <span><img  src="{{asset('img/productos.png')}}" alt="Product"></span>
          <a href="{{route('producto.index')}}">Productos</a>
        
         </div>
         
      
-    <!-- Provedores -->
+    <!-- Provedores
    
         <div class="element-slidebar-btn">
          <span><img  src="{{asset('img/provedores.png')}}" alt="Provedor"></span>      
@@ -70,19 +72,19 @@
         </div>
        
     
-    <!-- Compras -->
+     Compras 
 
         <div class="element-slidebar-btn">
          <span><img  src="{{asset('img/compras.png')}}" alt="Product"></span>
          <a href="{{route('categoria.index')}}">Compras</a>         
         </div>
        
-        <!-- Ventas -->
+         Ventas 
         
             <div class="element-slidebar-btn">
              <span><img  src="{{asset('img/ventas.png')}}" alt="ventas"></span>
              <a href="{{route('categoria.index')}}">Ventas</a>
-            </div>
+            </div> -->
            
     </div>
    </aside>

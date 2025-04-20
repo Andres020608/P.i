@@ -25,6 +25,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('/categoria',CategoriaController::class);
     Route::resource('/producto',ProductoController::class);
 
+    Route::get('/categoria', [CategoriaController::class, 'index'])->name('categoria.index');
+    Route::get('/producto', [ProductoController::class, 'index'])->name('producto.index');
+
     //pdf
     Route::get('/pdfproductos', [PdfController::class, 'pdfProductos'])->name('pdf.productos');
 });
